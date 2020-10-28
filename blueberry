@@ -1,0 +1,77 @@
+from turtle import Turtle as trtl
+import turtle as trt
+color = ["blue","white","blue","white","blue","white","blue" ]
+shape =["circle"]
+my_turtles = []
+for s in shape:
+  f = trtl()
+  my_turtles.append(f)
+  f.penup()
+  f.pensize(5)
+  f.speed(1000000)
+
+#  
+startx = 0
+starty = 0
+draw = 6
+
+#
+if draw > 0:
+    f.goto(startx,starty)
+    new_color = color.pop()
+    f.fillcolor(new_color)
+    f.pencolor(new_color)
+    f.pendown()
+    f.begin_fill()
+    f.circle(10,360)
+    f.end_fill() 
+    new_color = color.pop()
+    f.fillcolor(new_color)
+    f.pencolor(new_color)
+    f.begin_fill()
+    f.circle(10,360)
+    f.end_fill() 
+    f.penup()  
+    f.forward(50)
+    f.pendown()
+    new_color = color.pop()
+    f.fillcolor(new_color)
+    f.pencolor(new_color)
+    f.begin_fill()
+    f.circle(10,360)
+    f.end_fill()
+    startx = f.xcor()
+    starty = f.ycor()
+    f.goto(startx,starty)
+    new_color = color.pop()
+    f.fillcolor(new_color)
+    f.pencolor(new_color)
+    f.pendown()
+    f.begin_fill()
+    f.circle(10,360)
+    f.end_fill() 
+    new_color = color.pop()
+    f.fillcolor(new_color)
+    f.pencolor(new_color)
+    f.begin_fill()
+    f.circle(10,360)
+    f.end_fill() 
+    f.penup()  
+    f.forward(50)
+    f.pendown()
+    new_color = color.pop()
+    f.fillcolor(new_color)
+    f.pencolor(new_color)
+    f.begin_fill()
+    f.circle(10,360)
+    f.end_fill()
+    startx = f.xcor()
+    starty = f.ycor()
+    colormove = 5
+    white = -5
+    draw = draw - 1 
+
+
+
+wn = trt.Screen()
+wn.mainloop()
