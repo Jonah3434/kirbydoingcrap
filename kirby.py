@@ -1,5 +1,5 @@
-from turtle import Turtle as trtl
-Kirby = trtl()
+import turtle as trtl
+Kirby = trtl.Turtle()
 Kirby.hideturtle()
 Kirby.penup()
 Kirby.setpos(-200,200)
@@ -41,45 +41,57 @@ def row(colors,numbers):
 # colors = ["white" ,"black", "pink", "deeppink"]
 pink = "#ff92c6"
 darkpink = "#B54365"
-brownpink = "#620f0b"
-lightpink = "#ff1784"
+brownpink = "#601010"
+neonpink = "#FF1880"
 darkbrownpink = "#64100e"
-cherry = "#b50029"
-hazepink = "#ffa2de"
-midpink = '#f771a5'
-redpink = '#de4973'
+cherry = "#B0203F"
+hazepink = "#FFA0DF"
+midpink = '#F070A0'
+redpink = '#DF4870'
+bubblegum = '#FF90C0'
+black = '#000000'
+white = '#FFFFFF'
 
 # row 1
 colors = ["white", "black"]
-numbers = [7, 6]
+numbers = [7, 8]
 row(colors,numbers)
-# row 2 [b,b,b,bp,dp,dp,bp,b,b,b]
-colors = ["white", "black", brownpink, darkpink, brownpink, "black", "white"]
-numbers = [ 5, 3, 1, 2, 1, 3, 1]
-row(colors,numbers)
-# row 3 bppbppppppppbwww
-colors = ['white', "black", midpink, pink, hazepink, pink, redpink, "black", "white"]
-numbers = [ 4, 2, 1, 1, 4, 1, 1, 2, 1]
-row(colors,numbers)
-# row 4 bpppppbpbppppbww
-colors = ['white', "black", pink, hazepink, pink, darkbrownpink, "black", "white"]
-numbers = [ 3, 2, 1, 8, 1, 1, 1, 1]
-row(colors,numbers)
-# row 5
 
+# row 2 
+colors  = ["white", "black", brownpink, cherry, 'black', cherry, bubblegum, "black", cherry, redpink, 'black', "white"]
+numbers = [ 1, 6, 1, 1, 1, 1, 1, 1, 1, 1, 4, 1]
 row(colors,numbers)
-# row 6 bpppppbpbpppppbw
-colors = ["black", pink, "black", pink, "black", pink, "black", "white"]
-numbers = [ 1, 5, 1, 1, 1, 5, 1, 1]
+
+# row 3 
+colors = ['black', redpink, bubblegum, midpink, redpink, cherry, midpink, bubblegum, 'white', brownpink, hazepink, 'white', brownpink, midpink, bubblegum, hazepink, redpink, 'black']
+numbers = [ 2, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 row(colors,numbers)
-# row 7 bpppddpppddppppb
-colors = ["black", pink, darkpink, pink, darkpink, pink, "black"]
-numbers = [ 1, 3, 2, 3, 2, 4, 1]
+
+# row 4 
+colors = ['black', redpink, bubblegum, hazepink, bubblegum, hazepink, neonpink, midpink, 'black', hazepink, midpink, 'black', neonpink, bubblegum, hazepink, 'black']
+numbers = [ 1, 1, 1, 4, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 row(colors,numbers)
-# row 8 bppppppbpppppppb
-colors = ["black", pink, "black", pink, "black"]
-numbers = [ 1, 6, 1, 7, 1]
+
+# row 5
+colors  = ['black', redpink, bubblegum, hazepink, bubblegum, hazepink, midpink, 'black']
+numbers = [ 1, 1, 1, 7, 1, 7, 1, 1]
 row(colors,numbers)
+
+# row 6 
+colors = ['white', "black", redpink, midpink, bubblegum, hazepink, bubblegum, hazepink, bubblegum, hazepink, redpink, brownpink, cherry, hazepink, cherry, black]
+numbers = [ 0  , 1, 1, 1, 1, 2, 1, 4, 1, 2, 1, 1, 1, 2, 1, 1]
+row(colors,numbers)
+
+# row 7 
+colors  = ['white', "black", redpink, midpink, bubblegum, hazepink, bubblegum, midpink, brownpink, bubblegum, hazepink, midpink, black]
+numbers = [ 1, 1, 1, 2, 1, 5, 2, 1, 3, 1, 1, 1 ,1]
+row(colors,numbers)
+
+# row 8
+colors = [ white, "black", cherry, redpink, midpink, hazepink, midpink, redpink, brownpink, midpink, hazepink, midpink, black]
+numbers = [ 2, 1, 1, 1, 1, 6, 1, 1, 3, 1, 1, 1, 1 ]
+row(colors,numbers)
+'''
 # row 9 wbpppppbpppppppb
 colors = ["white", "black", pink, "black", pink, "black"]
 numbers = [ 1, 1, 5, 1, 7, 1]
@@ -112,4 +124,7 @@ row(colors,numbers)
 colors = ["white", "black", "white", "black", "white"]
 numbers = [ 1, 6, 3, 3, 3]
 row(colors,numbers)
+'''
 
+wn = trtl.Screen()
+wn.mainloop()
